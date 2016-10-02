@@ -27,6 +27,8 @@ defmodule TodosApi.ConnCase do
 
       import TodosApi.Router.Helpers
 
+      import TodosApi.Factory
+
       # The default endpoint for testing
       @endpoint TodosApi.Endpoint
     end
