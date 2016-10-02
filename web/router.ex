@@ -23,6 +23,6 @@ defmodule TodosApi.Router do
   scope "/api", TodosApi do
     pipe_through :api
 
-    resources "/todos", TodoController, only: [:index]
+    resources "/todos", TodoController, only: [:index, :show]
   end
 end

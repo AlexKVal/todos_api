@@ -7,7 +7,13 @@ defmodule TodosApi.TodoView do
     }
   end
 
-  defp todo_json(todo) do
+  def render("show.json", %{todo: todo}) do
+    %{
+      todo: todo_json(todo)
+    }
+  end
+
+  def todo_json(todo) do
     %{
       title: todo.title,
       description: todo.description,
