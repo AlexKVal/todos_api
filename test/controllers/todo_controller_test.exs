@@ -1,4 +1,4 @@
-defmodule TodosApi.TodoControllerText do
+defmodule TodosApi.TodoControllerTest do
   use TodosApi.ConnCase
 
   test "#index renders a list of todos", %{conn: conn} do
